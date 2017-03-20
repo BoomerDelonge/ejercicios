@@ -15,7 +15,7 @@ void main(void){
 		case 7: {printf("LXX");break;}
 		case 8: {printf("LXXX");break;}
 		case 9: {printf("XC");break;}	} 
-	z = x - y ; 
+	z = x - y*10 ; 
 	switch(z){
 		case 1: {printf("I");break;}
 		case 2: {printf("II");break;}
