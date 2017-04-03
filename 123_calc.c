@@ -48,3 +48,24 @@ void main(void){
 			}
 	}	
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+int x, y;
+float p;
+char op;
+void main(void){
+	printf("Indique los números a operar:   ");
+	scanf("%d %d",&x,&y);
+	printf("Indique el operador (+,-,*,/):   ");
+	getchar();
+	scanf("%c",&op);
+	switch(op){
+		case'+':{p=x+y; printf("%d + %d = %f",x,y,p); break;}
+		case'-':{p=x-y; printf("%d - %d = %f",x,y,p); break;}
+		case'*':{p=x*y; printf("%d * %d = %f",x,y,p); break;}
+		case'/':{if (y==0) printf("¡indeterminado!"); else p=x/y; printf("%d / %d = %f",x,y,p); break;}
+	}
+	printf("\n");
+}
