@@ -65,7 +65,7 @@ void main(void){
 		case'+':{p=x+y; printf("%d + %d = %f",x,y,p); break;}
 		case'-':{p=x-y; printf("%d - %d = %f",x,y,p); break;}
 		case'*':{p=x*y; printf("%d * %d = %f",x,y,p); break;}
-		case'/':{if (y==0) printf("¡indeterminado!"); else p=x/y; printf("%d / %d = %f",x,y,p); break;}
+		case'/':{if (y==0) {printf("¡indeterminado!");} else {p=x/y; printf("%d / %d = %f",x,y,p);} break;}
 	}
 	printf("\n");
 }
